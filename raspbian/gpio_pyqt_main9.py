@@ -3,6 +3,15 @@ import sys
 from PyQt5.QtWidgets import *
 from PyQt5.QtGui import *
 from PyQt5.QtCore import *
+import RPi.GPIO as GPIO
+import time
+
+SERVO = 12
+
+GPIO.setmode(GPIO.BOARD) 
+GPIO.setup(SERVO, GPIO.OUT)
+pwm = GPIO.PWM(SERVO, 50) # 50Hz
+pwm.start(3.0)  # 0.6ms
 
 class MyApp(QWidget) :
 
@@ -34,9 +43,9 @@ class MyApp(QWidget) :
 
     def Dial_changed(self):
         self.label.setText(str(self.dial.value()))
+        pwm.ChangeDutyCycle(float(self.dial.value()))
 
 if __name__ == '__main__':
     app = QApplication(sys.argv)
     wnd = MyApp()
-
     app.exec_()
