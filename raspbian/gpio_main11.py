@@ -1,5 +1,5 @@
 # Humid, Temp Sensor Test
-import Adafruit_DHT as dht
+import adafruit_dht as dht
 import time
 
 sensor = dht.DHT11
