@@ -21,7 +21,7 @@ def publish_sensor_data():
         pub_data = json.dumps(origin_data)
         client2.publish(topic='ems/rasp/data/',
                         payload=pub_data)
-        print(f'{curr} -> MQTT Published')
+        print(f'{curr} -> MQTT Published')  
     except RuntimeError as e:
         print(f'ERROR > {e.args[0]}')
     
