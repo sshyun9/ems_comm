@@ -140,7 +140,7 @@ class MyApp(QMainWindow):
                                    QMessageBox.Yes | QMessageBox.No,
                                    QMessageBox.No)
         if ans == QMessageBox.Yes:
-            self.conn.close() # DB접속 끊기!!!!!!!
+            self.conn.close() # DB접속 끊기!!!!! 연결후에끊기 반드시
             signal.accept()
         else:
             signal.ignore()
