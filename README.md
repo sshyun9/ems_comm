@@ -39,22 +39,18 @@ EMS 데이터 통신 및 제어프로그램
 
 <br/>
 
-![라즈베리파이구성]
-(https://raw.githubusercontent.com/sshyun9/ems_comm/main/capture/raspberrypi.png)
+![라즈베리파이구성](https://raw.githubusercontent.com/sshyun9/ems_comm/main/capture/raspberrypi.png)
 
 라즈베리파이구성
 
-![대시보드실행화면]
-(https://raw.githubusercontent.com/sshyun9/ems_comm/main/capture/dashboard.png)
+![대시보드실행화면](https://raw.githubusercontent.com/sshyun9/ems_comm/main/capture/dashboard.png)
 
 대시보드실행화면
 
-![네이버뉴스]
-(https://raw.githubusercontent.com/sshyun9/ems_comm/main/capture/naver_news.png)
+![네이버뉴스](https://raw.githubusercontent.com/sshyun9/ems_comm/main/capture/naver_news.png)
 
 네이버뉴스 검색 앱
 
-![네이버영화]
-(https://raw.githubusercontent.com/sshyun9/ems_comm/main/capture/naver_movie.png)
+![네이버영화](https://raw.githubusercontent.com/sshyun9/ems_comm/main/capture/naver_movie.png)
 
 네이버영화 검색 앱
