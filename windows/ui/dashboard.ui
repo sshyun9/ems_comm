@@ -514,13 +514,32 @@ border: none;</string>
 border: none;</string>
       </property>
       <property name="text">
-       <string>zxc</string>
+       <string/>
       </property>
       <property name="alignment">
        <set>Qt::AlignCenter</set>
       </property>
      </widget>
      <widget class="QPushButton" name="btnTempAlarm">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>290</y>
+        <width>48</width>
+        <height>48</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-style:none;
+background-image: url(:/alarm2);
+background-repeat: no-repeat;
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btnTempStop">
       <property name="geometry">
        <rect>
         <x>180</x>
@@ -531,7 +550,7 @@ border: none;</string>
       </property>
       <property name="styleSheet">
        <string notr="true">border-style:none;
-background-image: url(:/alarm2);
+background-image: url(:/stop);
 background-repeat: no-repeat;
 </string>
       </property>
@@ -676,17 +695,70 @@ border: none;</string>
        <set>Qt::AlignCenter</set>
       </property>
      </widget>
-     <widget class="QDial" name="dialHumid">
+     <widget class="QPushButton" name="btnHumidAlarm">
       <property name="geometry">
        <rect>
-        <x>60</x>
-        <y>280</y>
-        <width>181</width>
-        <height>161</height>
+        <x>120</x>
+        <y>290</y>
+        <width>48</width>
+        <height>48</height>
        </rect>
       </property>
-      <property name="notchesVisible">
-       <bool>true</bool>
+      <property name="styleSheet">
+       <string notr="true">border-style:none;
+background-image: url(:/alarm2);
+background-repeat: no-repeat;
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btnHumidStop">
+      <property name="geometry">
+       <rect>
+        <x>180</x>
+        <y>290</y>
+        <width>48</width>
+        <height>48</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-style:none;
+background-image: url(:/stop);
+background-repeat: no-repeat;
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lblHumidAlarm">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>253</y>
+        <width>201</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>맑은 고딕</family>
+        <pointsize>12</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);
+border: none;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
       </property>
      </widget>
     </widget>
@@ -749,10 +821,34 @@ border: none;</string>
        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
       </property>
      </widget>
+     <widget class="QChartView" name="dataView" native="true">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>50</y>
+        <width>371</width>
+        <height>411</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(244, 244, 244);
+border-style:none;
+border-width : 2px;
+border-radius : 10;</string>
+      </property>
+     </widget>
     </widget>
    </widget>
   </widget>
  </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QChartView</class>
+   <extends>QWidget</extends>
+   <header>PyQt5.QtChart</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
  <resources>
   <include location="dashboard.qrc"/>
  </resources>
