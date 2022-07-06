@@ -36,6 +36,7 @@ EMS 데이터 통신 및 제어프로그램
   - PyQt Widget 화면구성
   - 라즈베리파이, 서버 MQTT 통신
   - 라즈베리파이 IoT 핸들링
+  - PyQtGraph로 실시간 차트구현
 
 <br/>
 
